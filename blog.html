@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            lexend: "Lexend, sans-serif",
+          },
+          extend: {
+            colors: {
+              primary: "#F9F7F3",
+              accents: "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="sticky top-0 bg-transparent backdrop-blur-md z-40">
+      <div class="bg-orange-400/10 px-4 pt-3 pb-5 backdrop-blur-md">
+        <nav class="container mx-auto flex justify-between items-center">
+          <a href="./index.html"
+            ><button
+              class="btn btn-sm md:btn-md text-base h-8 bg-accents text-black hover:bg-[#8bc73d] md:px-8 border-0"
+            >
+              Home
+            </button></a
+          >
+          <div class="flex items-center gap-3">
+            <img class="w-6 md:w-8" src="./assets/logo.png" alt="" />
+            <h1 class="hidden md:block font-semibold text-lg">
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div class="flex items-center gap-3">
+            <img class="" src="./assets/coin.png" alt="" />
+            <div class="font-medium text-lg text-black/80">
+              <span id="total-balance" class="mr-1">5500</span>
+              <span>BDT</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container mx-auto px-3 md:px-8 py-4 mt-8">
+      <div>
+        <div class="flex items-center gap-2 justify-center md:justify-start">
+          <h1 class="font-bold text-2xl">Important FAQ</h1>
+          
+        </div>
+        <div class="flex flex-col gap-4 mt-8">
+          <div class="join join-vertical w-full">
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What is the Document Object Model (DOM)?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  DOM stand for Document Object Model. dom is a special type of
+                  object model. with the help of dom javascript can make any
+                  changes on html element like modify, add, delete etc. without
+                  dom javascript can't make any changes on html.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you select an element from the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>we have few method to select element from dom</p>
+                <ul>
+                  <li>getElementById</li>
+                  <li>getElementByClassName</li>
+                  <li>getElementByTagName</li>
+                  <li>querySelector</li>
+                  <li>querySelectorAll</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                What is event delegation in the context of the DOM, and why is
+                it useful?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  event deligation is deligate event to the parent. it's useful
+                  because if we manually add event listener and we got dynamic
+                  element then manually added listener won't work. here comes
+                  deligation into play. it will add listener to parent then no
+                  matter what data is static or dynamic it will work all time.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border"
+            >
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you manipulate an element's attributes and styles using
+                the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>we have few method to manipulate them. like:</p>
+                <p>setAttribute to set an attribute</p>
+                <p>remove attribute to remove an attribute</p>
+                <p>
+                  and we have style property . with that we can manipulate
+                  styles also
+                </p>
+                <p>
+                  we can add class with method also that way we can manipulate
+                  tailwind style also
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
